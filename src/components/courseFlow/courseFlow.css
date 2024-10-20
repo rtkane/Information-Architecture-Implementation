@@ -1,0 +1,29 @@
+.course-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .core-courses h2 {
+    background-color: #007ba7;
+    color: white;
+    padding: 10px;
+  }
+  
+  .course-flow {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for each prereq group */
+    gap: 20px; /* Space between columns */
+    justify-items: center; /* Center items within the columns */
+    margin: 20px 0;
+    width: 100%; /* Ensure the grid takes up full width */
+  }
+  
+  .course-box {
+    border: 2px solid #007ba7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    font-weight: bold;
+  }
+  

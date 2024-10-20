@@ -1,0 +1,22 @@
+.course-box {
+    border: 2px solid inherit;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    font-weight: bold;
+  }
+  
+  ul {
+    padding-left: 20px;
+    text-align: left; /* Align the list to the left */
+  }
+  
+  ul li {
+    margin-top: 5px;
+  }
+
+  .courseName{
+    font-size: 12px;
+    opacity: 75%;
+  }
