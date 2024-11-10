@@ -1,0 +1,61 @@
+/* CourseList.css */
+.course-list-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cs-courses-banner {
+    background-color: #3b7bba;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* CourseCategory.css */
+  .course-category {
+    margin: 0 20px;
+  }
+  
+  .category-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* CourseBox.css */
+  .course-box {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 200px;
+    text-align: left;
+    background-color: #f8f8f8;
+    position: relative;
+  }
+  
+  .course-box.elective {
+    border-color: #3b7bba;
+  }
+  
+  .course-code {
+    font-weight: bold;
+  }
+  
+  .course-status {
+    color: #666;
+  }
+  
+  .prerequisite {
+    color: red;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  
