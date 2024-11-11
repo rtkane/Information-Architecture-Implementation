@@ -1,0 +1,84 @@
+[
+    {
+      "id": "1",
+      "category": "CS Core",
+      "courseCode": "CS 111",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Intro to Computer Science",
+      "completionStatus": "Completed Fall 2022"
+    },
+    {
+      "id": "2",
+      "category": "CS Core",
+      "courseCode": "CS 235",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Intro to Computer Science",
+      "completionStatus": "Completed Winter 2023"
+    },
+    {
+      "id": "3",
+      "category": "CS Core",
+      "courseCode": "CS 236",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Discrete Structures",
+      "completionStatus": "Completed Winter 2023"
+    },
+    {
+      "id": "4",
+      "category": "CS Core",
+      "courseCode": "CS 252",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Intro to Computer Theory",
+      "completionStatus": "Completed Winter 2023"
+    },
+    {
+      "id": "5",
+      "category": "CS Core",
+      "courseCode": "CS 224",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Intro to Computer Systems",
+      "completionStatus": "Completed Winter 2023"
+    },
+    {
+      "id": "6",
+      "category": "CS Core",
+      "courseCode": "CS 240",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Advanced Programming",
+      "completionStatus": "Add Course"
+    },
+    {
+      "id": "7",
+      "category": "CS Core",
+      "courseCode": "CS 324",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "System Programming",
+      "completionStatus": "Prerequisites Needed"
+    },
+    {
+      "id": "8",
+      "category": "CS Core",
+      "courseCode": "CS 340",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Design and Testing",
+      "completionStatus": "Completed Winter 2023"
+    },
+    {
+      "id": "9",
+      "category": "CS Core",
+      "courseCode": "CS 312",
+      "credits": 3,
+      "sessions": "W S S F",
+      "title": "Algorithm Analysis",
+      "completionStatus": "Prerequisites Needed"
+    }
+  ]
+  
