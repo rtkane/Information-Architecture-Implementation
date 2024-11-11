@@ -1,11 +1,9 @@
-import React from "react";
-import FlowChart from "./components/courseFlow/FlowChart";
+import CourseFlow from "./components/courseFlow/courseFlow";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Computer Science Course List</h1>
-      <FlowChart />
+    <div>
+      <CourseFlow />
     </div>
   );
 }
