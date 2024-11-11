@@ -1,0 +1,36 @@
+.course-box {
+    display: flex;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .left-label {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-content {
+    padding: 16px;
+  }
+  
+  .course-info {
+    font-weight: bold;
+  }
+  
+  .course-title {
+    font-size: 18px;
+  }
+  
+  .course-completion {
+    font-size: 14px;
+  }
+  
+  .add-course {
+    color: red; /* Red text for "Add Course" or "Prerequisites Needed" */
+  }
