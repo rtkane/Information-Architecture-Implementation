@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Information-Architecture-Implementation/static/css/main.3167917d.css",
-    "main.js": "/Information-Architecture-Implementation/static/js/main.9c8fd161.js",
+    "main.css": "/Information-Architecture-Implementation/static/css/main.049369a6.css",
+    "main.js": "/Information-Architecture-Implementation/static/js/main.a2d9abfa.js",
     "static/js/453.73d5bf71.chunk.js": "/Information-Architecture-Implementation/static/js/453.73d5bf71.chunk.js",
     "index.html": "/Information-Architecture-Implementation/index.html",
-    "main.3167917d.css.map": "/Information-Architecture-Implementation/static/css/main.3167917d.css.map",
-    "main.9c8fd161.js.map": "/Information-Architecture-Implementation/static/js/main.9c8fd161.js.map",
+    "main.049369a6.css.map": "/Information-Architecture-Implementation/static/css/main.049369a6.css.map",
+    "main.a2d9abfa.js.map": "/Information-Architecture-Implementation/static/js/main.a2d9abfa.js.map",
     "453.73d5bf71.chunk.js.map": "/Information-Architecture-Implementation/static/js/453.73d5bf71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3167917d.css",
-    "static/js/main.9c8fd161.js"
+    "static/css/main.049369a6.css",
+    "static/js/main.a2d9abfa.js"
   ]
 }
