@@ -1,36 +1,65 @@
 .course-box {
     display: flex;
-    border: 2px solid #dcdcdc;
-    border-radius: 8px;
+    border: 2px solid #367ba2;
+    border-radius: 20px;
+    height: 100px;
     width: 300px;
     background-color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   
   .left-label {
-    background-color: #007bff; /* Blue background */
+    writing-mode: vertical-lr; /* Sets text vertically */
+    text-orientation: sideways;
+    transform: rotate(180deg); /* Flips the text to start at the bottom */
+    background-color: #367ba2; /* Example color, adjust as needed */
     color: white;
-    padding: 16px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 30px;
   }
   
   .right-content {
     padding: 16px;
+    margin-left: 30px;
+  }
+  .course-sessions span {
+    font-weight: bold;
   }
   
   .course-info {
     font-weight: bold;
-  }
-  
-  .course-title {
     font-size: 18px;
   }
   
+  .course-title {
+    font-size: 15px;
+  }
+  
   .course-completion {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .add-course {
     color: red; /* Red text for "Add Course" or "Prerequisites Needed" */
+  }
+
+  .add-course-button {
+    width: auto;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: solid .5px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .add-course-button:hover {
+    background-color: #0056b3;
+    color: white;
   }

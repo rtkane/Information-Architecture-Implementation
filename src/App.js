@@ -1,10 +1,11 @@
 import React from "react";
 import FlowChart from "./components/courseFlow/FlowChart";
+import HeaderCS from "./components/header/header";
 
 function App() {
   return (
     <div className="App">
-      <h1>Computer Science Course List</h1>
+      <HeaderCS />
       <FlowChart />
     </div>
   );
