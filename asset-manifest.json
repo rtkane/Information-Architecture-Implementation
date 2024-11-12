@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Information-Architecture-Implementation/static/css/main.049369a6.css",
-    "main.js": "/Information-Architecture-Implementation/static/js/main.a2d9abfa.js",
+    "main.js": "/Information-Architecture-Implementation/static/js/main.d4b1b20d.js",
     "static/js/453.73d5bf71.chunk.js": "/Information-Architecture-Implementation/static/js/453.73d5bf71.chunk.js",
     "index.html": "/Information-Architecture-Implementation/index.html",
     "main.049369a6.css.map": "/Information-Architecture-Implementation/static/css/main.049369a6.css.map",
-    "main.a2d9abfa.js.map": "/Information-Architecture-Implementation/static/js/main.a2d9abfa.js.map",
+    "main.d4b1b20d.js.map": "/Information-Architecture-Implementation/static/js/main.d4b1b20d.js.map",
     "453.73d5bf71.chunk.js.map": "/Information-Architecture-Implementation/static/js/453.73d5bf71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.049369a6.css",
-    "static/js/main.a2d9abfa.js"
+    "static/js/main.d4b1b20d.js"
   ]
 }
