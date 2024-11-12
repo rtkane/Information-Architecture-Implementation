@@ -11,7 +11,7 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 111",
     credits: 3,
-    sessions: "W S S F",
+    sessions: "W Sp Sm F",
     title: "Intro to Computer Science",
     completionStatus: "Completed Fall 2022",
   },
@@ -20,8 +20,8 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 235",
     credits: 3,
-    sessions: "W S S F",
-    title: "Intro to Computer Science",
+    sessions: "W Sp F",
+    title: "Data Structures",
     completionStatus: "Completed Winter 2023",
   },
   {
@@ -29,7 +29,7 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 236",
     credits: 3,
-    sessions: "W S S F",
+    sessions: "W Sp F",
     title: "Discrete Structures",
     completionStatus: "Completed Winter 2023",
   },
@@ -38,7 +38,7 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 252",
     credits: 3,
-    sessions: "W S S F",
+    sessions: "W F",
     title: "Intro to Computer Theory",
     completionStatus: "Completed Winter 2023",
   },
@@ -47,8 +47,8 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 224",
     credits: 3,
-    sessions: "W S S F",
-    title: "Intro to Computer Systems",
+    sessions: "W Sm F",
+    title: "Computer Systems",
     completionStatus: "Completed Winter 2023",
   },
   {
@@ -56,8 +56,8 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 240",
     credits: 3,
-    sessions: "W S S F",
-    title: "Advanced Programming",
+    sessions: "W Sp F",
+    title: "Adv Software Construction",
     completionStatus: "Add Course",
   },
   {
@@ -65,7 +65,7 @@ const courses = [
     category: "CS Core",
     courseCode: "CS 324",
     credits: 3,
-    sessions: "W S S F",
+    sessions: "W F",
     title: "System Programming",
     completionStatus: "Prerequisites Needed",
   },
@@ -75,17 +75,35 @@ const courses = [
     courseCode: "CS 340",
     credits: 3,
     sessions: "W S S F",
-    title: "Design and Testing",
-    completionStatus: "Completed Winter 2023",
+    title: "Software Design",
+    completionStatus: "Prerequisites Needed",
   },
   {
     id: "9",
     category: "CS Core",
     courseCode: "CS 312",
     credits: 3,
-    sessions: "W S S F",
-    title: "Algorithm Analysis",
+    sessions: "W F",
+    title: "Algorithm Design & Analysis",
     completionStatus: "Prerequisites Needed",
+  },
+  {
+    id: "10",
+    category: "CS Core",
+    courseCode: "CS 404",
+    credits: 2,
+    sessions: "W F",
+    title: "Ethics & Computers in Society ",
+    completionStatus: "Prerequisites Needed",
+  },
+  {
+    id: "11",
+    category: "Elective",
+    courseCode: "CS 180",
+    credits: 3,
+    sessions: "W",
+    title: "Introduction to Data Science",
+    completionStatus: "Add Course",
   },
 ];
 
@@ -112,28 +130,17 @@ const initialNodes = courses.map((course) => ({
 
 // Define edges between courses
 const initialEdges = [
-  { id: "e1-2", source: "1", target: "2", type: "smoothstep", animated: true },
-  { id: "e2-3", source: "2", target: "3", type: "smoothstep", animated: true },
-  { id: "e3-4", source: "3", target: "4", type: "smoothstep", animated: true },
-  { id: "e4-8", source: "4", target: "8", type: "smoothstep", animated: true },
-  {
-    id: "e5-7",
-    source: "5",
-    target: "7",
-    type: "straight",
-    label: "Prerequisites Needed",
-    style: { stroke: "red" },
-    labelStyle: { fill: "red" },
-  },
-  {
-    id: "e6-9",
-    source: "6",
-    target: "9",
-    type: "straight",
-    label: "Prerequisites Needed",
-    style: { stroke: "red" },
-    labelStyle: { fill: "red" },
-  },
+  { id: "e1-2", source: "1", target: "2", type: "smoothstep" }, // CS 111 -> CS 235 (Bottom)
+  { id: "e1-180", source: "1", target: "11", type: "smoothstep" }, // CS 111 -> CS 180 (Right)
+  { id: "e2-236", source: "2", target: "3", type: "smoothstep" }, // CS 235 -> CS 236 (Bottom)
+  { id: "e2-224", source: "2", target: "5", type: "smoothstep" }, // CS 235 -> CS 224 (Right)
+  { id: "e3-252", source: "3", target: "4", type: "smoothstep" }, // CS 236 -> CS 252 (Bottom)
+  { id: "e5-240", source: "5", target: "6", type: "smoothstep" }, // CS 224 -> CS 240 (Bottom)
+  { id: "e5-324", source: "5", target: "7", type: "smoothstep" }, // CS 224 -> CS 324 (Right)
+  { id: "e6-340", source: "6", target: "8", type: "smoothstep" }, // CS 240 -> CS 240 (Bottom)
+  { id: "e5-324", source: "5", target: "7", type: "smoothstep" }, // CS 240 -> CS 324 (Right)
+  { id: "340-312", source: "8", target: "9", type: "smoothstep" }, // CS 340 -> CS 312 (Right)
+  { id: "340-404", source: "8", target: "10", type: "smoothstep" }, // CS 340 -> CS 312 (Right)
 ];
 
 const FlowChart = () => {
@@ -146,7 +153,7 @@ const FlowChart = () => {
         edges={edges}
         fitView
         style={{
-          backgroundColor: "#f0f4f8",
+          backgroundColor: "none",
         }}
       >
         <MiniMap
