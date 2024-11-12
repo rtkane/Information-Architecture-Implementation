@@ -128,7 +128,17 @@ const initialNodes = courses.map((course) => ({
   targetPosition: "top",
 }));
 
-// Define edges between courses
+// Helper function to determine if an edge should be red
+const isPrerequisiteNeeded = (sourceNodeId, targetNodeId) => {
+  const sourceNode = courses.find((course) => course.id === sourceNodeId);
+  const targetNode = courses.find((course) => course.id === targetNodeId);
+  return (
+    (sourceNode && sourceNode.completionStatus === "Prerequisites Needed") ||
+    (targetNode && targetNode.completionStatus === "Prerequisites Needed")
+  );
+};
+
+// Define edges between courses with conditional red styling
 const initialEdges = [
   { id: "e1-2", source: "1", target: "2", type: "smoothstep" }, // CS 111 -> CS 235 (Bottom)
   { id: "e1-180", source: "1", target: "11", type: "smoothstep" }, // CS 111 -> CS 180 (Right)
@@ -141,7 +151,13 @@ const initialEdges = [
   { id: "e5-324", source: "5", target: "7", type: "smoothstep" }, // CS 240 -> CS 324 (Right)
   { id: "340-312", source: "8", target: "9", type: "smoothstep" }, // CS 340 -> CS 312 (Right)
   { id: "340-404", source: "8", target: "10", type: "smoothstep" }, // CS 340 -> CS 312 (Right)
-];
+].map((edge) => ({
+  ...edge,
+  style: {
+    stroke: isPrerequisiteNeeded(edge.source, edge.target) ? "red" : "#000", // Red if prereq needed
+    strokeWidth: 2,
+  },
+}));
 
 const FlowChart = () => {
   const { nodes, edges } = getLayoutedElements(initialNodes, initialEdges);
